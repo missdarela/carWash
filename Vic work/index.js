@@ -9,13 +9,13 @@ lock.addEventListener("click", () => {
         password.type = "text"
         password.style.color = "white"
         password.style.fontSize="16px"
-        lock.classList.remove("fa-lock")
-        lock.classList.add("fa-unlock")
+        lock.classList.remove("fa-eye")
+        lock.classList.add("fa-eye-slash")
     }
     else {
         password.type ="password"
-        lock.classList.add("fa-lock")
-        lock.classList.remove("fa-unlock")
+        lock.classList.add("fa-eye")
+        lock.classList.remove("fa-eye-slash")
     }
 })
 

@@ -17,7 +17,6 @@
 .page__content {
     height: 100vh;
     background-color: rgba(0, 0, 0, .9);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +36,7 @@
     padding: 20px;
     width: calc(100% / 3.5)!important;
     backdrop-filter: blur(5px);
+    min-width: 32%;
 }
 .login{
     text-align: center;
@@ -45,8 +45,8 @@
 }
 input,.butt{
     width:calc(100%/1);
-    height: 6vh;
-    margin-block: 7%;
+    height: 13px;
+    margin-block: 6%;
 }
 input{
     cursor: text;
@@ -61,6 +61,7 @@ input{
     border: none;
     border-radius: 10px;
     height: 7vh;
+    min-height: 6vh;
     transition: 1s;
     text-decoration: none;
     color: black;
@@ -73,10 +74,10 @@ input{
 }
 #user{
     font-size: 16px;
-    color: white;
 }
 #pwrd{
-    /* margin-bottom: 80px; */
+    font-size: 16px;
+    color: black!important;
 }
 
 .label1{
@@ -94,39 +95,43 @@ input{
 
 #pwrd:focus {
     background-color: white;
-}/
+}
 
+.eye-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* padlock fontawe */
-.fa-lock,.fa-unlock{
-    margin-left:-80px;
-    margin-top: 30px;
-    color: yellow;
+.fa-eye,.fa-eye-slash{
     cursor: pointer;
-    /* font-size: 100px; */
     z-index: 99;
+    margin-left: -32px;
 } 
-/* a button{
-    border: none;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 10px;
-    width: 250px;
-    background-color:gray;
-    cursor: pointer;
-    transition: 1s;
+
+
+/* media query */
+@media screen and (max-width:990px) {
+    .page__form {
+        /* width:0%; */
+        min-width: 48%;
+    }
+    .butt{
+       min-height: 3vh!important;
+    }
 }
-button{
-    text-decoration: none;
-    color:white;
+
+@media screen and (max-width:787px) {
+    .page__form {
+        min-width: 55%;
+    }
 
 }
-.butt:hover{
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3)
-    0 7px 13px -3px,gray 0 -3px 0 inset;
 
+@media screen and (max-width:600px) {
+    .page__form {
+        min-width: 75%;
+    }
 }
-button:hover{
-    transform: translateY(-3px);
-} */
-
