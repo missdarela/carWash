@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wash for Subscriber</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main  class="one-time">
+      <h2 class="reg-sub">Wash for Subscribers</h2>
+
+      <form action="ekwere" method="POST" id="one-time-form">
+        <fieldset id="subwash" class="one-time-field">
+          <label for="Subscriber">Subscriber</label>
+          <input
+            type="text"
+            placeholder="Subscriber"
+            name="subscriber"
+            id="subscriber"
+            required
+          /><br />
+
+          <select name="price" id="price">
+            <option value="price">Basic wash - 1 month plan</option>
+            <option value="price">Basic wash - 3 months plan</option>
+            <option value="price">Basic wash - 6 months plan</option>
+          </select>
+          <br />
+
+          <label for="noc">Number of Cars</label>
+          <input
+            type=""
+            placeholder="Phone Number"
+            name="phone"
+            id="phone"
+            min="1"
+            max="6"
+            required
+          /><br />
+
+          <input type="submit" name="submit" id="subm" /> <br />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
