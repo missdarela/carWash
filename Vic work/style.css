@@ -575,8 +575,8 @@
 
 /* print page styling */
 .print-main{
-    width: 60%;
-    min-width:50%;
+    width: 100%;
+    /* min-width:50%; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -586,7 +586,7 @@
     height: 100vh;
 }
 .print-fset{
-    width: 70%;
+    width: 40vw;
     text-align: center;
     margin-top:40px!important;
     margin: 0 auto;
@@ -594,7 +594,9 @@
 }
 .print-fset #print{
     width: 20vw;
-    padding: 6px;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 5px;
     border: none;
     background-color: white;
@@ -602,4 +604,29 @@
 }
 .logo-print{
     width: 150px;
+}
+/* print test */
+.print-test{
+   line-height: 1.5;
+   padding: 3px;
+}
+
+@media screen and (max-width:990px) {
+    .print-fset{
+        width: 65vw;
+        margin-top: 70px!important;
+    }
+    .print-test{
+       line-height:2;
+    } 
+}
+
+@media screen and (max-width:600px) {
+    .print-fset{
+        width: 75vw;
+    }
+    .print-test{
+       line-height:2;
+       padding: 5px!important;
+    } 
 }
